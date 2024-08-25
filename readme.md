@@ -1,9 +1,9 @@
 # Knight Travails
 This program determines the shortest possible path for a knight piece to move from one space to another on the chess board.
 
-This app uses a graph type data structure, built as a javascript class, to represent the chess board. Each space is represented by a node that stores its coordinates, and also those of its "neighbor" nodes that are one legal knight move away.
+This app uses an undirected graph data structure, built as a javascript class, to represent the chess board. Each space is represented by a node (or vertex) that stores its coordinates, and also those of its "neighbor" nodes that are one legal knight move away. Each legal move between two nodes represents an edge of the graph.
 
-A BFS (breadth first search) algorithm is then applied to traverse the graph, determining the path with the fewest moves to reach the target coordinates.
+A BFS (breadth first search) algorithm is then applied to traverse the graph, determining the path with the fewest moves to reach the target coordinates. Time complexity for this type of search is O(n) where n is the number of edges in the graph (there are more edges than nodes in this case).
 
 ![chess board](./img/knight-travails.png)
 
